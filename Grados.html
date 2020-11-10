@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Conversor grados centigrados a Fahrenheit</title>
+</head>
+<body>
+    <h1>Ingrese los grados centigrados</h1>
+    <input type="number" id="txtNumber" name="GradosCentigrados">
+    <button onclick="convertir()">Convertir</button>
+    <p id="pResultado">El resultado es: </p>
+    <script>
+        function convertir() {
+            var gradosCentigrados = document.getElementById("txtNumber").value
+            console.log(gradosCentigrados)
+            var gradosF = (gradosCentigrados * 9 / 5) + 32
+            console.log("grados Fahrenheit" + gradosF)
+            //window.alert(`El resultado es: ${gradosF} grados Fahrenheit`)
+            document.getElementById("pResultado").innerHTML = `El resultado es: ${gradosF} grados Fahrenheit`
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+ 
