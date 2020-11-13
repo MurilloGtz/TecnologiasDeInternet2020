@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Producción de manzana</h2>
+	
+<img src="https://st2.depositphotos.com/7036298/10774/i/600/depositphotos_107748090-stock-photo-red-green-apples-group-isolated.jpg">
+
+<p>Produccion total <input type="number" value="250" id="pt"><button>Numero de manzanas totales</button></p>
+	<p>Produccion actual <input type="number" value="10" id="pt"><button>Numero de manzanas actuales</button></p>
+	<button>+10</button></p><button>+15</button></p><button>+30</button></p><button>+50</button></p>
+	<p>Porcentaje  <input type="number" value="0" id="pt">
+		<button>Calcular</button></p>
+<button type="button"
+onclick="nada por ahora">
+Click</button>
+
+<script>
+var img = document.getElementById("imagen");
+        var pt = document.getElementById("total");
+        var pa = document.getElementById("actual"); 
+        var nmt =document.getElementById("numeromanzatotales");
+        var nma = document.getElementById("numeromanactuales");
+        var m5= document.getElementById("m5");
+        var m10 = document.getElementById("m10");
+        var m15 = document.getElementById("m15");
+        var m30 = document.getElementById("m30");
+        var m50 = document.getElementById("m50");
+        var porcen = document.getElementById("porcen");
+        var calpor = document.getElementById("calcular");
+
+
+        nmt.addEventListener("click",()=>{
+           alert(pt.value45); 
+        });
+        nma.addEventListener("click", ()=>{
+            alert(pa.value45);
+        });
+        m5.addEventListener("click" , ()=>{
+            suma(5);
+        });
+        m10.addEventListener("click" , ()=>{
+            suma(10);
+        });
+        m15.addEventListener("click" , ()=>{
+            suma(15);
+        });
+        m30.addEventListener("click" , ()=>{
+            suma(30);
+        });
+        m50.addEventListener("click" , ()=>{
+            suma(50);
+        });
+
+        calpor.addEventListener("click",()=>{
+            var por = (pa.value100)/pt.value;
+           
+
+        });
+
+        function suma(v){
+            total = parseInt(pa.value) + v;
+            document.getElementById("actuales").value = total;
+        }
+
+
+
+
+
+
+
+
+
+</scrit>
+
+
+<p id="demo"></p>
+
+</body>
+</html>
